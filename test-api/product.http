@@ -1,0 +1,23 @@
+@url=http://127.0.0.1:3000
+
+# Test factory product hot
+POST {{url}}/product
+Content-Type: application/json
+
+{
+    "name": "Product 2",
+    "price": 100,
+    "description": "Product 1 description",
+    "isHot": true
+}
+###
+# Test factory product normal
+POST {{url}}/product
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "price": 100,
+    "description": "Product 1 description",
+    "isHot": false
+}
